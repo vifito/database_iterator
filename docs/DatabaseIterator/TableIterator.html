@@ -1,0 +1,1143 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<title>Docs For Class TableIterator</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">DatabaseIterator</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_DatabaseIterator.html" class="menu">class tree: DatabaseIterator</a> ]
+		  [ <a href="../elementindex_DatabaseIterator.html" class="menu">index: DatabaseIterator</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_DatabaseIterator.html">DatabaseIterator</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../DatabaseIterator/_database_iterator.class.php.html">		database_iterator.class.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../DatabaseIterator/ColumnIterator.html">ColumnIterator</a><br />
+	    		<a href="../DatabaseIterator/DatabaseIterator.html">DatabaseIterator</a><br />
+	    		<a href="../DatabaseIterator/RowIterator.html">RowIterator</a><br />
+	    		<a href="../DatabaseIterator/TableIterator.html">TableIterator</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: TableIterator</h1>
+Source Location: /database_iterator.class.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Class TableIterator</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+              </ul>
+
+
+
+
+    
+        
+<h4>Version:</h4>
+<ul>
+  <li>0.1</li>
+</ul>
+
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li>Iterator (internal interface)</li><li>ArrayAccess (internal interface)</li>            </ul>
+        </p>
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../DatabaseIterator/TableIterator.html#var$db">$db</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#var$name">$name</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../DatabaseIterator/TableIterator.html#method__construct">__construct</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodcurrent">current</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodeach">each</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodexecute">execute</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodgetColumns">getColumns</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodgetCreateTable">getCreateTable</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodgetIterator">getIterator</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodgetPrimaryKeys">getPrimaryKeys</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodinit">init</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodinsert">insert</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodkey">key</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodlength">length</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodlimit">limit</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodloadRows">loadRows</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodnewRow">newRow</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodnext">next</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodoffsetExists">offsetExists</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodoffsetGet">offsetGet</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodoffsetSet">offsetSet</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodoffsetUnset">offsetUnset</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodorder_by">order_by</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodrewind">rewind</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodselect">select</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodsetDatabase">setDatabase</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodtotal">total</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodvalid">valid</a></li>
+    <li><a href="../DatabaseIterator/TableIterator.html#methodwhere">where</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 207]<br />
+Class TableIterator<br /><br /><p>DatabaseIterator use TableIterator, RowIterator and ColumnIterator classes to  manipulate database using SPL features. This class implements Iterator and  ArrayAccess interfaces; and extends of ArrayObject  <ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;$conn&nbsp;is&nbsp;an&nbsp;ADOConnection&nbsp;object</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$dbIt&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../DatabaseIterator/DatabaseIterator.html">DatabaseIterator</a></span><span class="src-sym">(</span><span class="src-var">$conn</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$table&nbsp;</span>=&nbsp;<span class="src-var">$dbIt</span><span class="src-sym">[</span><span class="src-str">'tablename'</span><span class="src-sym">]</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;TableIterator</span></div></li>
+<li><div class="src-line">&nbsp;echo&nbsp;<span class="src-var">$table</span><span class="src-sym">[</span><span class="src-num">0</span><span class="src-sym">]</span><span class="src-sym">-&gt;</span><span class="src-id">field1</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;Access&nbsp;to&nbsp;field1&nbsp;column&nbsp;of&nbsp;the&nbsp;first&nbsp;row</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>0.1</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/DatabaseIterator.html">DatabaseIterator</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$db"></a>
+	<p></p>
+	<h4>$db = <span class="value">&nbsp;null</span></h4>
+	<p>[line 216]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>usedby:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodtotal">TableIterator::total()</a></td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>ADOConnection</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$name"></a>
+	<p></p>
+	<h4>$name = <span class="value">&nbsp;null</span></h4>
+	<p>[line 211]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 246]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>TableIterator __construct(
+string
+$name, ADOConnection
+$db)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>Name of table</td>
+      </tr>
+          <tr>
+        <td class="type">ADOConnection&nbsp;&nbsp;</td>
+        <td><b>$db</b>&nbsp;&nbsp;</td>
+        <td>ADOConnection instance</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcurrent"></a>
+	<h3>method current <span class="smalllinenumber">[line 569]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void current(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>Iterator::current</dt>
+					</dl>
+		
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodeach"></a>
+	<h3>method each <span class="smalllinenumber">[line 291]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void each(
+string
+$callback)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Iterate across rows calling to $callback with row parameter<br /><br /><p><ol><li><div class="src-line">&nbsp;<span class="src-var">$foo&nbsp;</span>=&nbsp;<a href="http://www.php.net/create_function">create_function</a><span class="src-sym">(</span><span class="src-str">'$row'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'echo&nbsp;$row-&gt;field1;'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$dbIt</span><span class="src-sym">[</span><span class="src-str">'tablename'</span><span class="src-sym">]</span><span class="src-sym">-&gt;</span><a href="../DatabaseIterator/TableIterator.html#methodeach">each</a><span class="src-sym">(</span><span class="src-var">$foo</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td>www.php.net/create_function</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$callback</b>&nbsp;&nbsp;</td>
+        <td>Callback name or lambda function (create_function)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodexecute"></a>
+	<h3>method execute <span class="smalllinenumber">[line 376]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>ArrayIterator execute(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Perform SQL query and return a Iterator object<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>usedby:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodloadRows">TableIterator::loadRows()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodgetIterator">TableIterator::getIterator()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetColumns"></a>
+	<h3>method getColumns <span class="smalllinenumber">[line 452]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getColumns(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return columns for this table<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return an array of ColumnIterator</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetCreateTable"></a>
+	<h3>method getCreateTable <span class="smalllinenumber">[line 481]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getCreateTable(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get SQL syntax of CREATE TABLE sentence for this table<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return the CREATE TABLE sql syntax</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetIterator"></a>
+	<h3>method getIterator <span class="smalllinenumber">[line 403]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>ArrayIterator getIterator(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Make a ArrayObject with internal array of rows and return the  ArrayIterator<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodexecute">TableIterator::execute()</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>usedby:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodexecute">TableIterator::execute()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPrimaryKeys"></a>
+	<h3>method getPrimaryKeys <span class="smalllinenumber">[line 461]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getPrimaryKeys(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get primary keys for this table<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return array with primary keys ('columnName' =&gt; ColumnIterator object)</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinit"></a>
+	<h3>method init <span class="smalllinenumber">[line 261]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void init(
+[boolean
+$conditions = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Reset internal array of rows $_rows and reset conditions to SQL execution  if $conditions is true<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>usedby:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodinsert">TableIterator::insert()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$conditions</b>&nbsp;&nbsp;</td>
+        <td>If $conditions is true then reset SQL internal query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinsert"></a>
+	<h3>method insert <span class="smalllinenumber">[line 520]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void insert(
+
+$data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Create a new RowIterator object an insert $data into database.<br /><br /><p>The internal array ($_rows) will be empty to perform a new query to  database and to retrieve fresh data.  <ol><li><div class="src-line">&nbsp;<span class="src-key">for</span><span class="src-sym">(</span><span class="src-var">$i</span>=<span class="src-num">0</span><span class="src-sym">;&nbsp;</span><span class="src-var">$i</span>&lt;<span class="src-num">10</span><span class="src-sym">;&nbsp;</span><span class="src-var">$i</span>++<span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$std&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id">stdClass</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$std</span><span class="src-sym">-&gt;</span><span class="src-id">pk_field&nbsp;</span>=&nbsp;<span class="src-sym">(</span><span class="src-var">$i</span>+<span class="src-num">1</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$std</span><span class="src-sym">-&gt;</span><span class="src-id">integer&nbsp;</span>=&nbsp;<span class="src-num">0</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$std</span><span class="src-sym">-&gt;</span><span class="src-id">text&nbsp;</span>=&nbsp;<span class="src-str">'Testing&nbsp;'</span>.<span class="src-var">$i</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$dbIt</span><span class="src-sym">[</span><span class="src-str">'tablename'</span><span class="src-sym">]</span><span class="src-sym">-&gt;</span><a href="../DatabaseIterator/TableIterator.html#methodinsert">insert</a><span class="src-sym">(</span><span class="src-var">$std</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/RowIterator.html#methodinsert">RowIterator::insert()</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodnewRow">TableIterator::newRow()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodinit">TableIterator::init()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodkey"></a>
+	<h3>method key <span class="smalllinenumber">[line 574]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void key(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>Iterator::key</dt>
+					</dl>
+		
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodlength"></a>
+	<h3>method length <span class="smalllinenumber">[line 366]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer length(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Count internal rows<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return total rows into $_rows internal array</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodlimit"></a>
+	<h3>method limit <span class="smalllinenumber">[line 345]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../DatabaseIterator/RowIterator.html">RowIterator</a> limit(
+string
+$limit)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set limit parameter to internal SQL<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return $this reference to perform chaining method</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$limit</b>&nbsp;&nbsp;</td>
+        <td>Limit sentence to SQL query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodloadRows"></a>
+	<h3>method loadRows <span class="smalllinenumber">[line 417]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void loadRows(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Load rows, perform a call to execute method<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodexecute">TableIterator::execute()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodnewRow"></a>
+	<h3>method newRow <span class="smalllinenumber">[line 496]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../DatabaseIterator/RowIterator.html">RowIterator</a> newRow(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return a empty row to process a insert operation<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return a new RowIterator object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>usedby:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#methodinsert">TableIterator::insert()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodnext"></a>
+	<h3>method next <span class="smalllinenumber">[line 579]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void next(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>Iterator::next</dt>
+					</dl>
+		
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodoffsetExists"></a>
+	<h3>method offsetExists <span class="smalllinenumber">[line 595]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void offsetExists(
+
+$offset)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>ArrayAccess::offsetExists</dt>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$offset</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodoffsetGet"></a>
+	<h3>method offsetGet <span class="smalllinenumber">[line 605]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void offsetGet(
+
+$offset)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>ArrayAccess::offsetGet</dt>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$offset</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodoffsetSet"></a>
+	<h3>method offsetSet <span class="smalllinenumber">[line 590]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void offsetSet(
+
+$offset, 
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>ArrayAccess::offsetSet</dt>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$offset</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodoffsetUnset"></a>
+	<h3>method offsetUnset <span class="smalllinenumber">[line 600]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void offsetUnset(
+
+$offset)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>ArrayAccess::offsetUnset</dt>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$offset</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodorder_by"></a>
+	<h3>method order_by <span class="smalllinenumber">[line 356]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../DatabaseIterator/RowIterator.html">RowIterator</a> order_by(
+string
+$order_by)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set &quot;order by&quot; parameter to internal SQL<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return $this reference to perform chaining method</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$order_by</b>&nbsp;&nbsp;</td>
+        <td>&quot;Order by&quot; sentence to SQL query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrewind"></a>
+	<h3>method rewind <span class="smalllinenumber">[line 564]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void rewind(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>Iterator::rewind</dt>
+					</dl>
+		
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodselect"></a>
+	<h3>method select <span class="smalllinenumber">[line 323]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../DatabaseIterator/RowIterator.html">RowIterator</a> select(
+[string
+$cols = '*'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set select parameter to internal SQL<br /><br /><p><ol><li><div class="src-line">&nbsp;<span class="src-var">$rows&nbsp;</span>=&nbsp;<span class="src-var">$dbIt</span><span class="src-sym">[</span><span class="src-str">'tablename'</span><span class="src-sym">]</span><span class="src-sym">-&gt;</span><a href="../DatabaseIterator/TableIterator.html#methodselect">select</a><span class="src-sym">(</span><span class="src-str">'pk_field,&nbsp;content'</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><a href="../DatabaseIterator/TableIterator.html#methodwhere">where</a><span class="src-sym">(</span><span class="src-str">'content&nbsp;LIKE&nbsp;&quot;Nothing&quot;'</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><a href="../DatabaseIterator/TableIterator.html#methodexecute">execute</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return $this reference to perform chaining method</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$cols</b>&nbsp;&nbsp;</td>
+        <td>Select sentence to SQL query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetDatabase"></a>
+	<h3>method setDatabase <span class="smalllinenumber">[line 277]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setDatabase(
+ADOConnection
+$db)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set database object (ADOConnection)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">ADOConnection&nbsp;&nbsp;</td>
+        <td><b>$db</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtotal"></a>
+	<h3>method total <span class="smalllinenumber">[line 307]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int total(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return the number of rows in this table. This method don't use &quot;where&quot;  conditions to recover total rows number.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Total rows for table</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../DatabaseIterator/TableIterator.html#var$db">TableIterator::$db</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodvalid"></a>
+	<h3>method valid <span class="smalllinenumber">[line 584]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void valid(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>Iterator::valid</dt>
+					</dl>
+		
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodwhere"></a>
+	<h3>method where <span class="smalllinenumber">[line 334]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../DatabaseIterator/RowIterator.html">RowIterator</a> where(
+string
+$where)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set where parameter to internal SQL<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Return $this reference to perform chaining method</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$where</b>&nbsp;&nbsp;</td>
+        <td>Where sentence to SQL query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Mon, 25 May 2009 19:28:29 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.2</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
