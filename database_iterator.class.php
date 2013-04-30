@@ -39,7 +39,7 @@
  * @see RowIterator
  * @see ColumnIterator
  */
-class DatabaseIterator extends ArrayObject implements Iterator, ArrayAccess {
+class DatabaseIterator extends ArrayObject implements ArrayAccess {
     /**
      * @var ADOConnection ADOdb connection instance
      * @access public
@@ -204,7 +204,7 @@ class DatabaseIterator extends ArrayObject implements Iterator, ArrayAccess {
  * @version 0.1
  * @see DatabaseIterator
  */
-class TableIterator implements Iterator, ArrayAccess {
+class TableIterator implements ArrayAccess {
     /**
      * @var string
     */
